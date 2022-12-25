@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    font-size: 1rem;
+}
+
+li {
+    list-style: none;
+    color: #808080;
+    font-weight: 500;
+
+}
+
+li:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.main-image-mobile {
+    display: none;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.menu-open {
+    display: none;
+}
+
+.main-content {
+    display: flex;
+    gap: 20px;
+}
+
+.main-image, .main-image-mobile {
+    width: 100%;
+    height: auto;
+}
+ .main-news-2 {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    margin-top: 20px;
+ }
+
+ .main-title {
+    font-size: 3rem;
+ }
+
+ .main-content-2 {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+
+ button {
+    width: 150px;
+    border: none;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    cursor: pointer;
+ }
+
+ button:hover {
+    background-color: black;
+    color: white;
+ }
+ .main-black-content {
+    background-color: hsl(240, 100%, 5%);
+ }
+
+ .text {
+    line-height: 2rem;
+ }
+
+ .black-title {
+    color: hsl(35, 77%, 62%);
+    margin-bottom: 30px;
+    font-size: 2.6rem;
+ }
+
+ .black-tit {
+    color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
+ }
+
+ .black-tit:hover {
+    color: hsl(35, 77%, 62%);
+ }
+
+ .main-black {
+    padding: 30px 25px;
+ }
+
+ .black-text {
+    color: hsl(36, 100%, 99%);
+    margin-bottom: 35px;
+ }
+
+.blog {
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.blog-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    display: flex;
+    gap: 15px;
+}
+
+.number {
+    font-size: 3rem;
+    color: #DDDDDD;   
+}
+
+.blog-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 355px;
+    margin-right: 50px;
+}
+
+.blog-image {
+    width: 130px;
+ 
+}
+
+.blog-title {
+    cursor: pointer;
+}
+
+.blog-title:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    background: rgba(48, 46, 46, 0.3);
+    visibility: hidden;
+}
+
+.overlay.active {
+    visibility: visible;
+}
+
+.mobile-menu-white {
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    visibility: hidden;
+    transition: left 1s ease-in-out;
+}
+
+.mobile-menu-white.active {
+    visibility: visible;
+    
+}
+
+.menu-close {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+}
+
+.menu-mobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 14%;
+    left: 5%;
+}
+
+.mobile-li {
+    margin-bottom: 20px;
+    color: hsl(240, 100%, 5%);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+@media (max-width: 992px) {
+   .main-image {
+    display: none;
+   }
+
+   .main-image-mobile {
+    display: block;
+   }
+
+   .main-content {
+    flex-direction: column;
+   }
+
+   .main-news-2 {
+    flex-direction: column;
+   }
+
+   .menu {
+    display: none;
+   }
+
+   .blog-section {
+    flex-direction: column;
+   }
+
+   .main-content {
+    max-width: 920px;
+   }
+
+   .container {
+    max-width: 920px;
+    margin: 50px 30px;
+   }
+
+   .blog-content {
+     margin-right: 0px;
+   }
+
+   .box {
+    margin-bottom: 30px;
+   }
+
+   .menu-open {
+    display: block;
+    cursor: pointer;
+   }
+
+   .blog-content {
+    margin-left: 10px;
+}
+}
